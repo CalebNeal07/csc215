@@ -44,11 +44,19 @@
 
 ## Electonic Logic
  - These logic gates are implemented with transistors, a type of electronic switch.
- - The symbols for AND, OR, & NOT are <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="white" d="M2 4v16h12a8 8 0 0 0 8-8a8 8 0 0 0-8-8zm2 2h10a6 6 0 0 1 6 6a6 6 0 0 1-6 6H4z"/></svg>, <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="white" d="M2 4v16h12a8 8 0 0 0 8-8a8 8 0 0 0-8-8zm2 2h10a6 6 0 0 1 6 6a6 6 0 0 1-6 6H4z"/></svg>, & <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="white" d="M2 4v16l14.2-7c.42 1.19 1.54 2 2.8 2a3 3 0 0 0 3-3a3 3 0 0 0-3-3c-1.26 0-2.38.81-2.8 2zm2 3.3l9.7 4.7L4 16.7zM19 11c.5 0 1 .5 1 1s-.5 1-1 1a1 1 0 0 1-1-1c0-.5.5-1 1-1"/></svg>, respectivly.
  - These gates can be combined to create the composite gates NAND & NOR which are the negation of AND & OR respectively.
+ - Each gate has a symbol to represent it. THese
+ - When a gate's symbol has a circle at the end of it, it indicates that the gate is negated (NOT, NOR, or NAND).
  - These gates can be combined to create even more comples behavior like the XOR gate.
 
 ## Number Systems
- -
+ - We are accustomed to base 10 number systems.
+ - When dealing with computers numbers are often represented in base 2, 8, or 16.
+ - This system is useful because do a better job of representing the underlying binary system of computers.
+ - Base 8, or octal, values are typicalling indicated with an 0o prefix, e.x. the decimal number 10 in octal would be written as $0o12$.
+ - Base 2 would be prefaced by $0b$, and Base 16 with $0x$.
+ - The digits in hexadecimal are, in order, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f.
 
 ## The Binary System
+- Binary is used at the hardware level because it represents the true/false values in electronic logic.
+- As in decimal the positon of digits corresponds to their value where each place is equivalent the base to the power of its place times the value at that place.
