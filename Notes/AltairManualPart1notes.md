@@ -1,5 +1,7 @@
 # Part 1
 
+[Book](https://ubuntourist.codeberg.page/Altair-8800/part-1.html#b-electronic-logic)
+
 **Table of Contents**
 1. [Introduction](#Intoduction)
 2. [Logic](#Logic)
@@ -8,6 +10,8 @@
 5. [The Binary System](#The-Binary-System)
 
 ## Introduction
+
+
 
 ## Logic
 
