@@ -49,6 +49,9 @@
  - When a gate's symbol has a circle at the end of it, it indicates that the gate is negated (NOT, NOR, or NAND).
  - These gates can be combined to create even more comples behavior like the XOR gate.
 ```mermaid
+---
+title: XOR Gate with Carry
+---
 flowchart LR
   A(A)
   B(B)
@@ -73,6 +76,20 @@ flowchart LR
 
   AND2 --> SUM
 ```
+
+| A | B | CARRY | SUM | RESULT |
+|---|---|-------|-----|--------|
+| 0 | 0 |   0   |  0  |   00   |
+| 0 | 1 |   0   |  1  |   01   |
+| 1 | 0 |   0   |  1  |   01   |
+| 1 | 1 |   1   |  0  |   10   |
+
+> [!NOTE]
+> This gate has a simpiler impementation using only NAND gates.
+
+ - The inclusion of the carry output allows XOR gate to act as a rudimentary adder circuit; however, when used as a purely as logic gate the carry output is ignored.
+ - These gates can be combined to create more complex behavior, in fact the registers in a computer are composed of various logic gates.
+ - Some of types of circuits composed of logic gates are bistable, monostable, & astable.
 
 ## Number Systems
  - We are accustomed to base 10 number systems.
