@@ -48,6 +48,31 @@
  - Each gate has a symbol to represent it. THese
  - When a gate's symbol has a circle at the end of it, it indicates that the gate is negated (NOT, NOR, or NAND).
  - These gates can be combined to create even more comples behavior like the XOR gate.
+```mermaid
+flowchart LR
+  A(A)
+  B(B)
+  AND1(AND)
+  OR1(OR)
+  NOT1(NOT)
+  AND2(AND)
+  CARRY(CARRY)
+  SUM(SUM)
+
+  A --> AND1
+  B --> AND1
+
+  A --> OR1
+  B --> OR1
+
+  AND1 --> CARRY
+  AND1 --> NOT1
+
+  OR1 --> AND2
+  NOT1 --> AND2
+
+  AND2 --> SUM
+```
 
 ## Number Systems
  - We are accustomed to base 10 number systems.
