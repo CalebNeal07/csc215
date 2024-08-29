@@ -45,7 +45,7 @@
 ## Electonic Logic
  - These logic gates are implemented with transistors, a type of electronic switch.
  - These gates can be combined to create the composite gates NAND & NOR which are the negation of AND & OR respectively.
- - Each gate has a symbol to represent it. THese
+ - Each gate has a symbol to represent it.
  - When a gate's symbol has a circle at the end of it, it indicates that the gate is negated (NOT, NOR, or NAND).
  - These gates can be combined to create even more comples behavior like the XOR gate.
 ```mermaid
