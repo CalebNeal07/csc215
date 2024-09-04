@@ -44,8 +44,9 @@ Table of Contents
  - The computer needs percies steps to tell it exactly what to do
  - You need to deciede where in memory the program, the data, and the result will be stored
    Here's a simple program:
+
   |  Instruction  |  Corresponding Bit Pattern |
-  |---------------|----------------------------|
+  | ------------- | -------------------------- |
   | LDA 0x80 0x00 | 00111010 10000000 00000000 |
   | MOV (A->B)    | 01000111                   |
   | LDA 0x81 0x00 | 00111010 10000001 00000000 |
