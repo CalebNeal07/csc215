@@ -91,6 +91,9 @@ flowchart LR
  - These gates can be combined to create more complex behavior, in fact the registers in a computer are composed of various logic gates.
  - Some of types of circuits composed of logic gates are bistable, monostable, & astable.
 
+ [Trostin](https://github.com/bananajoeo7/csc215/blob/main/Notes/AltairManualPart1notes.md)
+ [Johan](https://github.com/johan-franco/csc215/blob/main/Notes/AltairManualPart1notes.md)
+
 ## Number Systems
  - We are accustomed to base 10 number systems.
  - When dealing with computers numbers are often represented in base 2, 8, or 16.
