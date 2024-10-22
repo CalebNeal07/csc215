@@ -39,6 +39,7 @@ Some instructions have a place for a register address, these addresses are:
 ## The M Register
 
 The M "register" is not actually a register, but rather the value at the address indicated by the `HL` register pair. This register's utility is often overlooked because of programmer's inability to think in terms of the hardware.
+[Anar's Notes](https://github.com/FunnyManAnar/csc215/blob/main/9%20Register%20Usage%20In%20the%208080.md)
 
 ## Stack Operations
 The stack allows for register state to be saved and recalled using the `PUSH` and `POP` instructions. This feature is especially important because it's how a return address is saved so a subroutine can be exited. Often these pushes are referred to as "pushing onto the top of the stack" and "popping data off the top of the stack" though in reality the stack technically grows downwards, though this doesn't affect what is happening conceptually.
