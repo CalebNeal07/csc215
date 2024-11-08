@@ -23,9 +23,19 @@ WCONF   EQU     2
         END 
 ```
 
+> [!IMPORTANT]
+> If you make a mistake while writing a program you can navigate to the line you want to edit, and use `S` command to substitute in the correction.
+
+ED will also write a `FOO.BAK` file when editing an existing file that can be used to restore a file.
+
 ## Assembling the Program
 
 Running `ASM TEST` will assemble the program, presuming there are no errors with the code.
+The ASM command can also be modified by three options after the file name. 
+`ASM TEST.123`
+1. The drive to read the source file from
+2. The drive to write the `.HEX` file to
+3. The drive to write the `.PRN` file to 
 
 ## Running the Program
 
