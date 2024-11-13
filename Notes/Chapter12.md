@@ -67,7 +67,7 @@ In this file there a couple things to note:
   1. The `CO` & `CI` subroutines are nearly identical and demonstrate the difference between `WCONF` AND `RCONF` 
   2. The instruction `ANI 7FH` masks the highest order bit in the `A` register, this should always be done when reading an ASCII character from an I/O device
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > The author strongly suggests putting all numeric constants at the beginning of the the file, especially hardware specific constants.
 
 
