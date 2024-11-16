@@ -1,12 +1,3 @@
-# Console Input/Output
-
-Assembly language programs are broken down into blocks. Ideally each of these blocks should perform a single task and have a single entry point and a single exit; however, there are cases that are reasonable exceptions to this principle.
-
-These blocks simplify programming effort. They can be validated independently of one another and, if needed, replaced if they have the same inputs and outputs. These blocks are made especially effective because of the stack organization present within the 8080's ISA.
-
-
-> CPMIO.ASM
-```
 ; CP/M I/O SUBROUTINES   30 JULY 82
 
 ; ASCII CHARACTERS
@@ -61,14 +52,3 @@ CO:     PUSH    B       ; SAVE REGISTERS
 STAK:   DB      0       ; TOP OF STACK
 
         END
-```
-
-In this file there a couple things to note:
-  1. The `CO` & `CI` subroutines are nearly identical and demonstrate the difference between `WCONF` AND `RCONF` 
-  2. The instruction `ANI 7FH` masks the highest order bit in the `A` register, this should always be done when reading an ASCII character from an I/O device
-
-> [!IMPORTANT]
-> The author strongly suggests putting all numeric constants at the beginning of the the file, especially hardware specific constants.
-
-
-
