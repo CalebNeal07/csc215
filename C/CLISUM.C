@@ -22,7 +22,7 @@ char *argv[];
 {
 	int i;
 	int sum;
-		sum = 0;	
+	sum = 0;	
 
 	for (i = 1; i < argc; i++) {
 		int val;
