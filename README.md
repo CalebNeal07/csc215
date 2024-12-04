@@ -13,5 +13,8 @@
  - [Chapter 13](./Notes/Chapter13.md)
 
 ## The C Programming Language Exercises
+[Line Counter](./C/LC.C)
  - *1-6:* [COUNT.C](./C/COUNT.C)
- - *1-7:* [SW.C](./C/LC.C)
+ - *1-7:* [SW.C](./C/SW.C)
+ - *1-8:* [1-8.C](./C/1-8.C)
+ - *1-9:* The boundaries are the limits of  
