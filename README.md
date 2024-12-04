@@ -14,5 +14,4 @@
 
 ## The C Programming Language Exercises
  - *1-6:* [COUNT.C](./C/COUNT.C)
- - *1-7:* []
- 
+ - *1-7:* [SW.C](./C/LC.C)
