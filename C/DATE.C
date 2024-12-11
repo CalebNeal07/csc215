@@ -3,32 +3,65 @@
 day_of_year(year, month, day)
 int year, month, day;
 {
-  int day_tab[2][13];
-  day_tab = {{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},{0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}};
+  int day_tab[13];
+  day_tab[0] = 0;
+  day_tab[1] = 31;
+  day_tab[2] = year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? 29 : 28;
+  day_tab[3] = 31;
+  day_tab[4] = 30;
+  day_tab[5] = 31;
+  day_tab[6] = 30;
+  day_tab[7] = 31;
+  day_tab[8] = 31;
+  day_tab[9] = 30;
+  day_tab[10] = 31;
+  day_tab[11] = 30;
+  day_tab[12] = 31;
+  int i;
 
-  int i, leap;
+  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) 
+    day_tab[2] = 29;
 
-  leap = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
   for (i = 1; i < month; i++)
-    day += day_tab[leap][i];
+    day += day_tab[i];
   return(day);
 }
 
 month_day(year, yearday, pmonth, pday)
 int year, yearday, *pmonth, *pday;
 {
-  int day_tab[2][13];
-  day_tab = {{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},{0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}};
+  int day_tab[13];
+  day_tab[0] = 0;
+  day_tab[1] = 31;
+  day_tab[2] = year % 4 == 0 && year % 100 != 0 || year % 400 == 0 ? 29 : 28;
+  day_tab[3] = 31;
+  day_tab[4] = 30;
+  day_tab[5] = 31;
+  day_tab[6] = 30;
+  day_tab[7] = 31;
+  day_tab[8] = 31;
+  day_tab[9] = 30;
+  day_tab[10] = 31;
+  day_tab[11] = 30;
+  day_tab[12] = 31;
+  int i;
 
-  int i, leap;
-
-  leap = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-  for (i = 1; yearday > day_tab[leap][i]; i++)
-    yearday -= day_tab[leap][i];
+  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) 
+    day_tab[2] = 29;
+  
+  for (i = 1; yearday > day_tab[i]; i++) {
+    yearday -= day_tab[i];
+  }
   *pmonth = i;
   *pday = yearday;
 }
 
 main() {
-  printf("%d", day_of_year(2012, 3, 4);
+  int month, day;
+  month = 3;
+  day = 4;
+  printf("%d", day_of_year(2012, month, day));
+
+  month_day(2012, 57, month, day);
+  printf("%d: %d, %d", day_of_year(2012, month, day), month, day);
 }
