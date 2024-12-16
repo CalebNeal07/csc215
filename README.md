@@ -18,3 +18,66 @@
  - *1-7:* [SW.C](./C/SW.C)
  - *1-8:* [1-8.C](./C/1-8.C)
  - *1-9:* The boundaries are the limits of  
+
+## Rudimentary Unit Testing Framework for BDS C
+[CTEST.H](./C/BDS_CTEST/CTEST.H) - Single header with basic unit test functionality
+### Example
+**ISQRT.H**
+```c
+/* Source: https://en.wikipedia.org/wiki/Integer_square_root#Linear_search_using_addition 
+Finds the floored square root of y*/
+unsigned isqrt(y)
+unsigned y;
+{
+    unsigned L;
+    unsigned a;
+    unsigned d;
+
+    L = 0;
+    a = 1;
+    d = 3;
+
+    while (a <= y)
+    {
+        a = a + d;
+        d = d + 2;
+        L = L + 1;
+    }
+
+    return L;
+}
+```
+
+**TEST.C**
+```c
+
+#include "CTEST.H"
+
+#include "VEC.H"
+
+main() {
+    BEGIN_TESTING("VEC.H");
+
+    TEST("INTEGER SQUARE ROOT WITH ASSERT") {
+        ASSERT(isqrt(4) == 2);
+    }
+
+    TEST("INTEGER SQUARE ROOT WITH ASSERT_EQ") {
+        ASSERT_EQ(isqrt(4), 2);
+    }
+
+    TEST("INTENTIONAL FAILURE") {
+        ASSERT(1 == 2);
+    }
+
+    TEST("MANUAL PASS/FAIL") {
+        if (isqrt(5) == 3) {
+            PASS();
+        } else {
+            FAIL();
+        }
+    }
+
+    END_TESTING();
+}
+```
