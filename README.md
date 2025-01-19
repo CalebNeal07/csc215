@@ -81,3 +81,8 @@ main() {
     END_TESTING();
 }
 ```
+
+## Rational Numbers
+Rational numbers implemented using the number's position in the [Calkin-Wilf Sequence](https://en.wikipedia.org/wiki/Calkin%E2%80%93Wilf_tree#Breadth_first_traversal)
+
+Code is in [this](https://github.com/CalebNeal07/rational) repo.
